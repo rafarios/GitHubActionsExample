@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: install cppunit
-      run: sudo apt install -y libcppunit-dev build-essential
+      run: sudo apt install -y libcppunit-dev 
     - name: configure
-      run: ./configure
+      run: chmod +x ./configure ; configure
     - name: make
       run: make
     - name: make test
