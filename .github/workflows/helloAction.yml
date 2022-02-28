@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: install cppunit
-      run: sudo apt install -y libcppunit-dev
+      run: sudo apt install -y libcppunit-dev configure make curl
     - name: configure
       run: ./configure
     - name: make
